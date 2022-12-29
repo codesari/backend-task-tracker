@@ -15,3 +15,8 @@ PRIORİTY=(
 * terminaldeki ....... HTTP/1.1" 200 3343
 3343 karakter sayisini gösteriyor
 
+! model serializer kullanınca tek tek field'ları yazmaya gerek kalmıyor
+class TodoSerializer(serializers.ModelSerializer):
+
+
+
