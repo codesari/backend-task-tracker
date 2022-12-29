@@ -1,2 +1,13 @@
 * pip install djangorestframework 
 bu komut pip install django'yu da içerir
+* restframework yükledikten sonra settings.py'da 'rest_framework' olarak installed app'e ekliyorum
+? pip install python-decouple (.env dosyasindaki keylere ulasabilmek için yükledik)
+(her paket yüklemeden sonra pip freeze ile txt 'ye kayıt etmeyi unutmayalım)
+! admin paneldeki groups sekmesinden AUTHORIZATION işlemleri yapılır.kime hangi yetki verileceği ayarlanur.admin-co-admin.super-moderator vs..
+* models'da yeni bir yapı kullandık
+PRIORİTY=(
+        (1,'High')
+        (2,'Medium')
+        (3,'Low')
+    )
+? front-end de high,medium,low diye seçtirir,backend'de 1,2,3 diye gönderilir
