@@ -1,0 +1,2 @@
+* pip install djangorestframework 
+bu komut pip install django'yu da içerir
