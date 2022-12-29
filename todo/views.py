@@ -1,3 +1,6 @@
-from django.shortcuts import render
+from django.http import HttpResponse
+from .models import Todo
 
-# Create your views here.
+def todo_home(request):
+    return HttpResponse('<h1 style="background-color:black;color:yellowgreen;text-align:center" >Todo App </h1>')
+

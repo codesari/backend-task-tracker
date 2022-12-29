@@ -11,3 +11,7 @@ PRIORİTY=(
         (3,'Low')
     )
 ? front-end de high,medium,low diye seçtirir,backend'de 1,2,3 diye gönderilir
+! models'teki işlemlerin ardından migrate yapmadan admin.py'da işlem yapılırsa hata veriyor.önce migrate sonra admin.py'da kayıt
+* terminaldeki ....... HTTP/1.1" 200 3343
+3343 karakter sayisini gösteriyor
+
