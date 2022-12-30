@@ -18,5 +18,10 @@ PRIORİTY=(
 ! model serializer kullanınca tek tek field'ları yazmaya gerek kalmıyor
 class TodoSerializer(serializers.ModelSerializer):
 
+ todos=Todo.objects.get(id=pk)
+    eger girilen gecerli bir id degilse hata verecektir.bunu önlemek icin try-catch vazifesi gören get_object_or_404 fonksiyonu kullanilabilir
+    todos=get_object_or_404(Todo,id=pk)
 
+! id çeken sorgularda many=True demeye gerek yok.querySet dönmüyor tek bir veri döndüğü için
+return Response(serializer.data)
 
