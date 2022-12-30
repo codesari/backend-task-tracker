@@ -5,5 +5,5 @@ from .view import home
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',home),
-    path('todo',include('todo.urls'))
+    path('todo/',include('todo.urls'))
 ]
